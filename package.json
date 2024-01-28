@@ -1,0 +1,23 @@
+{
+  "name": "ai_space_restaurant",
+  "version": "1.0.0",
+  "description": "A webpage for a fictional restaurantA simple web page for a fictional restaurant using AI generated images",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GitOnMyLvl/ai_space_restaurant.git"
+  },
+  "author": "Wolfgang Vinatzer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GitOnMyLvl/ai_space_restaurant/issues"
+  },
+  "homepage": "https://github.com/GitOnMyLvl/ai_space_restaurant#readme",
+  "dependencies": {
+    "webpack": "^5.90.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
