@@ -1,5 +1,6 @@
 import './style.css';
 import generateHome from './home.js';
+import generateMenu from './menu.js';
 
 function component() {
     const element = document.createElement('div');
@@ -16,6 +17,7 @@ function component() {
     menuBtn.textContent = 'Menu';
     contactBtn.textContent = 'Contact';
     homeBtn.onclick = generateHome;
+    menuBtn.onclick = generateMenu;
     nav.appendChild(homeBtn);
     nav.appendChild(menuBtn);
     nav.appendChild(contactBtn);

@@ -1,10 +1,12 @@
+import Restaurant from './restaurant.png';
+
 function generateHome() {
     let content = document.getElementById('content');
     let heading = document.createElement('h1');
     let image = document.createElement('img');
     let text = document.createElement('p');
     heading.textContent = "Cosmic Gastronova";
-    image.src ="../src/restaurant.png";
+    image.src = Restaurant;
     image.alt = "Restaurant";
     text.textContent = `Welcome to "Cosmic Gastronova," an exquisite dining establishment nestled on the surreal landscapes of an uncharted alien planet. This avant-garde restaurant transcends the boundaries of earthly dining, offering patrons an unparalleled gastronomic journey through the cosmos.
 
