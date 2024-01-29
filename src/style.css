@@ -34,7 +34,11 @@ nav button{
 }
 
 #content{
+    max-width: 80%;
     margin: 0 auto;
+}
+
+.home{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,8 +46,33 @@ nav button{
     gap: 2rem;
 }
 
-#content img{
+.home img{
     width: 40%;
     height: auto;
     max-width: 400px;
 }
+
+.menu{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    grid-row: 2/3;
+    align-self: center;
+    justify-self: center;
+}
+
