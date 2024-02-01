@@ -1,5 +1,7 @@
 function generateHome() {
     let content = document.getElementById('content');
+    let home = document.createElement('div');
+    home.classList.add('home');
     let heading = document.createElement('h1');
     let image = document.createElement('img');
     let text = document.createElement('p');
@@ -17,9 +19,10 @@ function generateHome() {
     Our stellar service team, clad in attire reminiscent of intergalactic explorers, guides you through the celestial menu, ensuring a seamless and delightful dining experience. The Cosmic Gastronova sommelier curates an exceptional selection of cosmic elixirs and interstellar wines to complement your gastronomic journey.
     
     Whether you are a discerning galactic traveler or a curious terrestrial explorer, Cosmic Gastronova invites you to embark on a culinary odyssey beyond the stars. Immerse yourself in the cosmic ambiance, savor the flavors of the cosmos, and discover a universe of unparalleled dining at this extraordinary intersection of gastronomy and interstellar elegance.`;
-    content.appendChild(heading);
-    content.appendChild(image);
-    content.appendChild(text);
+    home.appendChild(heading);
+    home.appendChild(image);
+    home.appendChild(text);
+    content.appendChild(home);
 }
 
 export default generateHome;
