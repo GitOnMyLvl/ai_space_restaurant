@@ -11,7 +11,6 @@ function capitalize(string){
 }
 
 function generateContact(){
-    let content = document.getElementById('content');
     let contact = document.createElement('div');
     contact.classList.add('contact');
     let heading = document.createElement('h1');
@@ -32,7 +31,7 @@ function generateContact(){
     contact.appendChild(image);
     contact.appendChild(chef);
     contact.appendChild(contactDetails);
-    content.appendChild(contact);
+    return contact;
 }
 
 export default generateContact;

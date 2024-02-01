@@ -1,9 +1,13 @@
 class ContentManager {
-    constructor(content) {
-        this.content = content;
+    constructor() {
+        
     }
     
-    generateContent() {
-        document.getElementById("content").innerHTML = this.content;
-    }
+    generateContent(content) {
+        const contentElement = document.getElementById('content');
+        contentElement.innerHTML = '';
+        contentElement.appendChild(content);
+       }
 }
+
+export default ContentManager;

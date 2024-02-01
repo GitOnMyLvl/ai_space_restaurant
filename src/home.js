@@ -24,7 +24,7 @@ function generateHome() {
     home.appendChild(heading);
     home.appendChild(image);
     home.appendChild(text);
-    content.appendChild(home);
+    return home;
 }
 
 export default generateHome;

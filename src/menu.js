@@ -39,14 +39,13 @@ const menuItems = [
 ];
 
 function generateMenu(){
-    let content = document.getElementById('content');
     let menu = document.createElement('div');
     menu.classList.add('menu');
     menuItems.forEach(item => {
         let card = new MenuCard(item.name, item.price, item.description, item.image);
         menu.appendChild(card.createCard());
     });
-    content.appendChild(menu);
+    return menu;
 }
 
 export default generateMenu;
