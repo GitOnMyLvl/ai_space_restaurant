@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     document.body.appendChild(component());
-    document.querySelector('#home').click();
+    document.querySelector('#contact').click();
 });
 
 
