@@ -14,12 +14,16 @@ function generateContact(){
     let contact = document.createElement('div');
     contact.classList.add('contact');
     let heading = document.createElement('h1');
+    let info = document.createElement('div');
     let image = document.createElement('img');
+    let imageAndInfo = document.createElement('div');
     let chef = document.createElement('p');
     let contactDetails = document.createElement('ul');
     heading.textContent = "Contact Us";
+    info.classList.add('info');
     image.src =Chef;
     image.alt = "Chef";
+    imageAndInfo.classList.add('imageAndInfo');
     chef.textContent = `Chef Galactica Nova`;
     chef.style.fontWeight = "bold";
     for(var key in contactInfo){
@@ -27,10 +31,12 @@ function generateContact(){
         item.innerHTML = "<b>" + capitalize(key) + ":</b> " + contactInfo[key];
         contactDetails.appendChild(item);
     }
+    info.appendChild(chef);
+    info.appendChild(contactDetails);
+    imageAndInfo.appendChild(info);
+    imageAndInfo.appendChild(image);
     contact.appendChild(heading);
-    contact.appendChild(image);
-    contact.appendChild(chef);
-    contact.appendChild(contactDetails);
+    contact.appendChild(imageAndInfo);
     return contact;
 }
 
