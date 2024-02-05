@@ -22,7 +22,10 @@ document.addEventListener('DOMContentLoaded', function () {
         const menuBtn = document.createElement('button');
         const contactBtn = document.createElement('button');
         const content = document.createElement('div');
+        const footer = document.createElement('footer');
+        const footerText = document.createElement('p');
 
+        element.id = 'container';
         content.id = 'content';
         left.classList.add('left');
         right.classList.add('right');
@@ -46,6 +49,8 @@ document.addEventListener('DOMContentLoaded', function () {
             buttonLogic.handleClick(contactBtn, generateContact());
         };
 
+        footerText.textContent = 'Created by: Wolfgang Vinatzer - 2024';
+
         logo.appendChild(logoImage);
         logo.appendChild(logoText);
         left.appendChild(logo);
@@ -58,6 +63,8 @@ document.addEventListener('DOMContentLoaded', function () {
         header.appendChild(nav);
         element.appendChild(header);
         element.appendChild(content);
+        footer.appendChild(footerText);
+        element.appendChild(footer);
 
         return element;
     }
