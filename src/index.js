@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     document.body.appendChild(component());
-    document.querySelector('#contact').click();
+    document.querySelector('#home').click();
 });
 
 
